@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_rel"
+    android:background="@drawable/background">
+
+
+    <RelativeLayout
+        android:id="@+id/main_btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/main_iv_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/add" />
+
+        <ImageView
+            android:id="@+id/main_iv_more"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/more" />
+
+        <LinearLayout
+            android:id="@+id/main_layout_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/main_iv_more"
+            android:layout_toEndOf="@+id/main_iv_add"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_btn_layout">
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

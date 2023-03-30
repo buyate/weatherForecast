@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeBackgroudActivity"
+    android:background="@color/bColor"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/city_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:background="@color/teal_700">
+
+        <ImageView
+            android:id="@+id/bg_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/icon_back" />
+
+        <ImageView
+            android:id="@+id/city_iv_int"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/yi"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/city_tv_title"
+            android:text="修改背景图"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/background1"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:src="@drawable/background"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/background2"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:src="@drawable/background2"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:id="@+id/background3"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:src="@drawable/background4"
+        android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/background4"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:src="@mipmap/bg"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/background5"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:src="@mipmap/bg2"
+            android:layout_marginTop="30dp"/>
+
+        <ImageView
+            android:id="@+id/background6"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:src="@mipmap/bg5"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

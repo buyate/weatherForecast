@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:id="@+id/item_city_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp"
+        android:padding="5dp">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:id="@+id/text1"
+            android:textColor="@color/black"
+            android:text="宜昌"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/sp_item_delete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/detele"
+            android:layout_gravity="right"
+            android:visibility="invisible"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
